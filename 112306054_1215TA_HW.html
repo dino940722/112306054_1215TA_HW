@@ -8,7 +8,7 @@
 <body>
 
 <script>
-  // Function declarations for basic calculator operations
+  
   function add(num1, num2) {
     return num1 + num2;
   }
@@ -29,15 +29,15 @@
     }
   }
 
-  // Function to take user input and perform the calculation
+  
   function calculate() {
-    // Loop to allow multiple calculations
+    
     while (true) {
-      // Get user input for numbers and operation
+      
 
       let num1 = parseFloat(prompt("Enter the first number:"));
 
-      // Validate input for the first number
+      
       while (isNaN(num1)) {
         alert("Invalid input. Please enter a valid number.");
         num1 = parseFloat(prompt("Enter the first number:"));
@@ -45,7 +45,7 @@
 
       let num2 = parseFloat(prompt("Enter the second number:"));
 
-      // Validate input for the second number
+      
       while (isNaN(num2)) {
         alert("Invalid input. Please enter a valid number.");
         num2 = parseFloat(prompt("Enter the second number:"));
@@ -53,13 +53,13 @@
 
       let operation = prompt("Choose an operation (+, -, *, /):");
 
-      // Validate input for the operation
+      
       while (!["+", "-", "*", "/"].includes(operation)) {
         alert("Invalid operation. Please choose +, -, *, or /.");
         operation = prompt("Choose an operation (+, -, *, /):");
       }
 
-      // Perform calculation based on the chosen operation
+      
       let result;
       switch (operation) {
         case "+":
@@ -78,10 +78,10 @@
           result = "Error: Invalid operation!";
       }
 
-      // Display the result using alert
+      
       alert("Result: " + result);
 
-      // Ask if the user wants to perform another calculation
+      
       let continueCalculation = prompt("Do you want to perform another calculation? (yes/no):");
 
       if (continueCalculation.toLowerCase() !== "yes") {
@@ -90,7 +90,7 @@
     }
   }
 
-  // Call the calculate function to initiate the program
+  
   calculate();
 </script>
 
